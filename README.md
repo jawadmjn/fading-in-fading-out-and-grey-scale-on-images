@@ -2,7 +2,8 @@
 This is an example written by me for fading in, fading out and grey scale on images. CSS file is compile with LESS and Javascript functions are in assets/js/main.js file.
 
 ## Installation:
-Just clone it and open index.html in your browser to see it working.
+* Just clone it and open index.html in your browser to see it working.
+* Verify the javascript and see a live demo at [JsFiddle demo](https://jsfiddle.net/jawadmjn/homht38s/4/)
 
 ## Code Structure:
 
