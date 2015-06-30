@@ -85,67 +85,35 @@
     width: 178px;
     height: 178px;
     border-radius: 50%;
-    background-image: url('../images/home_testimonial_sprite.jpg')
+    background-image: url('../images/home_testimonial_sprite.jpg');
+    background-repeat: no-repeat;
+    /* START on load opacity of images is 0.3 and they are grayscale */
+    opacity: 0.3;
+    filter: alpha(opacity=40);
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    /* END on load opacity of images is 0.3 and they are grayscale */
+}
+#content_1 .testimonial_image:hover {
+    cursor: pointer
 }
 #content_1 #testimonial1 {
-    background-repeat: no-repeat;
-    background-position: 0 0
-}
-#content_1 #testimonial1:hover {
-    cursor: pointer
+    background-position: 0 0;
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    opacity: 1
 }
 #content_1 #testimonial2 {
-    background-repeat: no-repeat;
-    background-position: -186px 0;
-    opacity: .3;
-    filter: alpha(opacity=40);
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%)
-}
-#content_1 #testimonial2:hover {
-    cursor: pointer
+    background-position: -186px 0
 }
 #content_1 #testimonial3 {
-    background-repeat: no-repeat;
-    background-position: -377px 0;
-    opacity: .3;
-    filter: alpha(opacity=40);
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%)
-}
-#content_1 #testimonial3:hover {
-    cursor: pointer
+    background-position: -377px 0
 }
 #content_1 #testimonial4 {
-    background-repeat: no-repeat;
-    background-position: -2px -187px;
-    opacity: .3;
-    filter: alpha(opacity=40);
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%)
-}
-#content_1 #testimonial4:hover {
-    cursor: pointer
+    background-position: -2px -187px
 }
 #content_1 #testimonial5 {
-    background-repeat: no-repeat;
-    background-position: -199px -187px;
-    opacity: .3;
-    filter: alpha(opacity=40);
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%)
-}
-#content_1 #testimonial5:hover {
-    cursor: pointer
-}
-#content_1 .testi_triangle {
-    position: absolute;
-    width: 52px;
-    height: 29px;
-    margin: -28px 0 0 59px;
-    background-image: url("../img/home_testimonial_sprite.jpg");
-    background-repeat: no-repeat;
-    background-position: -500px -338px
+    background-position: -199px -187px
 }
 #content_1 .testimonial_text {
     display: none;
@@ -157,6 +125,6 @@
     border: 1px solid #eaeaea;
     border-radius: 15px
 }
-#content_1 .testimonial1_text {
+#content_1 #testimonial1_text {
     display: block
 }

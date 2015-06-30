@@ -97,78 +97,40 @@
         height: 178px;
         border-radius: 50%;
         background-image: url('../images/home_testimonial_sprite.jpg');
+        background-repeat: no-repeat;
+        /* START on load opacity of images is 0.3 and they are grayscale */
+        filter: alpha(opacity=40); /* For IE8 and earlier */
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        opacity: 0.3;
+        /* END on load opacity of images is 0.3 and they are grayscale */
+        &:hover
+        {
+            cursor: pointer;
+        }
     }
     #testimonial1
     {
-        background-repeat: no-repeat;
         background-position: 0px 0px;
-        &:hover
-        {
-            cursor: pointer;
-        }
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        opacity: 1;
     }
     #testimonial2
     {
-        background-repeat: no-repeat;
         background-position: -186px 0px;
-        opacity: 0.3;
-        filter: alpha(opacity=40); /* For IE8 and earlier */
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        &:hover
-        {
-            cursor: pointer;
-        }
     }
     #testimonial3
     {
-        background-repeat: no-repeat;
         background-position: -377px 0px;
-        opacity: 0.3;
-        filter: alpha(opacity=40); /* For IE8 and earlier */
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        &:hover
-        {
-            cursor: pointer;
-        }
     }
     #testimonial4
     {
-        background-repeat: no-repeat;
         background-position: -2px -187px;
-        opacity: 0.3;
-        filter: alpha(opacity=40); /* For IE8 and earlier */
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        &:hover
-        {
-            cursor: pointer;
-        }
     }
     #testimonial5
     {
-        background-repeat: no-repeat;
         background-position: -199px -187px;
-        opacity: 0.3;
-        filter: alpha(opacity=40); /* For IE8 and earlier */
-        filter: grayscale(100%);
-        -webkit-filter: grayscale(100%);
-        &:hover
-        {
-            cursor: pointer;
-        }
-    }
-    .testi_triangle
-    {
-        position: absolute;
-        width: 52px;
-        height: 29px;
-        margin: -28px 0px 0px 59px;
-        background-image: url("../img/home_testimonial_sprite.jpg");
-        background-repeat: no-repeat;
-        background-position: -500px -338px;
-
     }
     .testimonial_text
     {
@@ -181,7 +143,7 @@
         border: 1px solid #eaeaea;
         border-radius: 15px;
     }
-    .testimonial1_text
+    #testimonial1_text
     {
         display: block;
     }
