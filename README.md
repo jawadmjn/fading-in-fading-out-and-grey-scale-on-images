@@ -3,7 +3,7 @@ This is an example written by me for fading in, fading out and grey scale on ima
 
 ## Installation:
 * Just clone it and open index.html in your browser to see it working.
-* Verify the javascript and see a live demo at [JsFiddle demo](https://jsfiddle.net/jawadmjn/n8dqewk7/)
+* Verify the javascript and see a live demo at [JsFiddle demo](https://jsfiddle.net/jawadmjn/n8dqewk7/5/)
 
 ## Code Structure:
 
